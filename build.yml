@@ -1,25 +1,25 @@
 #sdk: "C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0"
-sdkversion: 4.0.0
-name: Jet
+sdkversion: "4.0.0"
+name: "Jet"
 version: 1.0
-vendor: rhomobile
-build: debug
+vendor: "rhomobile"
+build: "debug"
 bbver: 6.0
-applog: rholog.txt
+applog: "rholog.txt"
 iphone:
-  configuration: Release
-  sdk: iphonesimulator6.0
-  provisionprofile:
-  codesignidentity:
-  entitlements:
-  BundleIdentifier: com.rhomobile.jet
-  BundleURLScheme: jet
+  configuration: "Release"
+  sdk: "iphonesimulator6.0"
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.jet"
+  BundleURLScheme: "jet"
 wp:
-  productid: '06497430-9466-0131-871a-6c71d977e4fc'
+  productid: "06497430-9466-0131-871a-6c71d977e4fc"
 symbian:
-  uid: '0xe534eb04'
+  uid: "0xe534eb04"
 android:
-  version: 2.3.3
+  version: "2.3.3"
   android_title: 0
-
-extensions: ["rhoconnect-client"]
+extensions:
+  - rhoconnect-client

@@ -4,6 +4,9 @@ start_path = '/app'
 # path to the options page (in this case handled by javascript)
 options_path = '/app/Settings'
 
+# RESTful services url
+RESTFUL_URL = "http://radiant-wildwood-5057.herokuapp.com/"
+
 # location of bundle url (i.e. from rhohub.com); used by desktop win32 simulator
 rhobundle_zip_url = ''
 
