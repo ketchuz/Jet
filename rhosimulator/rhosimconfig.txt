@@ -1,0 +1,9 @@
+rhodes_path='C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0'
+app_version='1.0'
+app_name='Jet'
+reload_app_changes=1
+debug_port=
+debug_host='127.0.0.1'
+platform='android'
+os_version='2.3.3'
+ext_path=C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/commonAPI/coreapi;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/extensions/json;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhoconnect-client-4.0.0/lib/../ext/rhoconnect-client;

@@ -63,6 +63,31 @@
 
 <body data-platform="<%= Rho::System.getProperty('platform') %>">
     <%= @content %>
+
+    <div id='mainMenu'>
+        <a class='menuButton' href="<%= url_for :controller => :Settings, :action => :login %>">
+           <span>Jet</span> 
+        </a>
+
+         <a class='menuButton' href="<%= url_for :controller => :Settings, :action => :login %>">
+           <span>Promos</span> 
+        </a>
+
+         <a class='menuButton' href="<%= url_for :controller => :Settings, :action => :login %>">
+           <span>Reserva</span> 
+        </a>
+
+         <a class='menuButton' href="<%= url_for :controller => :Settings, :action => :login %>">
+           <span>Ubicacion</span> 
+        </a>
+
+         <a class='menuButton' href="<%= url_for :controller => :Settings, :action => :login %>">
+           <span>Galleria</span> 
+        </a>
+
+    </div>
+
+<script type="text/javascript" src="/public/js/menuScripts.js"></script>
 </body>
 
 </html>

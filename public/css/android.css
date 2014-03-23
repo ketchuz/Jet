@@ -416,3 +416,27 @@ li.ui-btn-up-c {
     color: red;
     text-align: center;
 }
+
+#mainMenu{
+	width: 100%;
+	background: #262626;
+	position: absolute;
+	bottom: 0;
+}
+
+.menuButton{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.menuButton span{
+	color: #cc6600;
+	text-shadow: #993333 0px 1px 0px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+}

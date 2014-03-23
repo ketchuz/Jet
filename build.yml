@@ -20,5 +20,6 @@ symbian:
   uid: '0xe534eb04'
 android:
   version: 2.3.3
+  android_title: 0
 
 extensions: ["rhoconnect-client"]
