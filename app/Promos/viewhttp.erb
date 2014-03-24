@@ -12,7 +12,18 @@
 
   <div data-role="content">
     
-    <%= $jsonresult %>
+    <% $jsonresult.each do |promo| %>
+<!--         <a><%= promo['title'] %></a>
+ -->
+        <ul data-role="listview">
+          <li>
+            <a href="#"><%= promo['title'] %></a>
+            <p><%= promo['description'] %></p>
+          </li>
+        </ul>
+    <% end %>
+
+
 
   </div>
 

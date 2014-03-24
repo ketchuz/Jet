@@ -16,7 +16,24 @@ class PromosController < Rho::RhoController
 
   def httpget_callback
     $httpresult = @params['body']
-    $jsonresult = Rho::JSON.parse($httpresult)[0].inspect
+    $jsonresult = Rho::JSON.parse($httpresult)
+
+    Promos.delete_all()
+
+    $jsonresult.each do |promo| 
+      myPromo = Promos.new
+      myPromo.title = promo['title']
+      myPromo.description = promo['description']
+      myPromo.save
+    end
+
+    # $jsonresult.each do |promo|
+    #   myPromo = Promos.new
+    #   myPromo.title = promo.title
+    #   myPromo.description = promo.description
+    #   myPromo.save
+    # end
+
     WebView.refresh
   end
 
