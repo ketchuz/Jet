@@ -38,7 +38,7 @@
                 $.mobile.loadingMessageDelay = 300; // in ms
 
                 // Uncomment these options in case of performance problem in pages transition
-                //$.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultPageTransition = 'none';
                 //$.mobile.defaultDialogTransition = 'none';
                 //$.mobile.ajaxEnabled = false;
                 //$.mobile.pushStateEnabled = false;
@@ -69,7 +69,7 @@
            <span>Jet</span> 
         </a>
 
-         <a class='menuButton' href="<%= url_for :controller => :Promos, :action => :index %>">
+         <a class='menuButton' href="<%= url_for :controller => :Promos, :action => :asynchttp %>">
            <span>Promos</span> 
         </a>
 

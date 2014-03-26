@@ -11,7 +11,7 @@ class PromosController < Rho::RhoController
       :callback => (url_for :action => :httpget_callback),
       :callback_param => "" )   
 
-     redirect :action => :viewhttp
+     redirect :action => :index
   end
 
   def httpget_callback
