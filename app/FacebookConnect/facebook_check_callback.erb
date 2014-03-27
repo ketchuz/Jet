@@ -1,0 +1,26 @@
+<div data-role="page">
+
+	<div data-role="header" data-position="inline">
+    <h1>FacebookConnect</h1>
+    <a href="<%= Rho::Application.startURI %>" class="ui-btn-left" data-icon="home" data-direction="reverse" <%= "data-ajax='false'" if is_bb6 %>>
+      Home
+    </a>
+    <a href="<%= url_for :action => :logout %>" class="ui-btn-right" data-icon="star">
+      Logout
+    </a>
+	</div>
+
+  <div data-role="content">
+    
+  	<div class="pPic">
+  		<img class="pPic" src="<%= @pic %>">
+  		<span id="name"><%= @name %></span>
+
+  	</div>
+
+  </div>
+
+
+
+</div>
+

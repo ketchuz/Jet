@@ -1,0 +1,37 @@
+<div data-role="page">
+
+	<div data-role="header" data-position="inline">
+    <h1>FacebookConnects</h1>
+    <a href="<%= Rho::Application.startURI %>" class="ui-btn-left" data-icon="home" data-direction="reverse" <%= "data-ajax='false'" if is_bb6 %>>
+      Home
+    </a>
+    <a href="<%= url_for :action => :new %>" class="ui-btn-right" data-icon="plus">
+      New
+    </a>
+	</div>
+
+  <div data-role="content">
+    
+
+    <div>
+      
+      <h1 style="text-align:center;">Reserva desde tu celular!</h1>
+       
+      
+       
+      <!-- <form method="POST" action="<%= url_for :action => :connect_to_facebook %>" >
+        <input type="submit" class="standardButton" value="Login "/>
+        <button id="facebook">Reserva con Facebook</button>
+      </form> -->
+
+      <div style="width: 100%;    text-align: center;">
+        <a id="facebook" href="<%= url_for :action => :connect_to_facebook %>">Reserva con Facebook</a>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+</div>

@@ -11,13 +11,14 @@
 	    Logout
 	  </a>
     <% else %>
-        <a href="<%= url_for :controller => :Settings, :action => :login %>" class="ui-btn-right" data-icon="star">Login</a>
+        <a href="<%= url_for :controller => :FacebookConnect, :action => :index %>" class="ui-btn-right" data-icon="star">Login</a>
     <% end %>
   </div>
 
   <div data-role="content">
     <ul data-role="listview">
-      <li><a href="#">Add link here...</a></li>
+<!--       <li><a href="#">Add link here...</a></li>
+ -->      <!-- <li><a href="<%= url_for :controller => :FacebookConnect, :action => :index %>">Facebook connect</a></li> -->
       <!-- <li><a href="<%= url_for :controller => :Promos, :action => :index %>">Go to Promos </a></li>
       <li><a href="<%= url_for :controller => :Promos, :action => :asynchttp %>">Http View </a></li> -->
     </ul>

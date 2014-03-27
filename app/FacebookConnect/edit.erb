@@ -1,0 +1,26 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @facebookconnect.name %></h1>
+    <a href="<%= url_for :action => :show, :id => @facebookconnect.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @facebookconnect.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @facebookconnect.object %>"/>
+      
+          <div data-role="fieldcontain">
+            <label for="facebookconnect[name]" class="fieldLabel">Name</label>
+            <input type="text" id="facebookconnect[name]" name="facebookconnect[name]" value="<%= @facebookconnect.name %>" <%= placeholder( "Name" ) %> />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>
